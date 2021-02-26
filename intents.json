@@ -19,14 +19,14 @@
          "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
          "context": [""]
         },
-        {"tag": "options",
-         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+        {"tag": "credit_card",
+         "patterns": ["credit card", "mastercard", "master card", "credit card", "loan","visa"],
+         "responses": ["what about my credit card", "How can you help","What happened"],
          "context": [""]
         },
-        {"tag": "adverse_drug",
-         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
-         "responses": ["Navigating to Adverse drug reaction module"],
+        {"tag": "hotels",
+         "patterns": ["Hotel", "Marriott", "Marriot", "vacation" ],
+         "responses": ["What is the vacation package","Oh I was selected","That sounds great!","I love a vacation"],
          "context": [""]
         },
         {"tag": "blood_pressure",
