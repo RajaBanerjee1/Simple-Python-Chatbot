@@ -95,7 +95,7 @@ sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 #fitting and saving the model
-hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
+hist = model.fit(np.array(train_x), np.array(train_y), epochs=20, batch_size=5, verbose=1)
 model.save('chatbot_model.h5', hist)
 
 from keras.models import load_model
@@ -188,4 +188,4 @@ def fahrenheit_from(celsius):
         return "invalid input"
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=8080, debug=True)
+    app.run(host="127.0.0.1", port=8081, debug=True, use_reloader=False)
