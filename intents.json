@@ -1,4 +1,9 @@
 {"intents": [
+	{"tag": "default",
+         "patterns": [],
+         "responses": ["What was that you said?", "Can you repeat", "Sorry! I did not get you"],
+         "context": [""]
+        },
         {"tag": "greeting",
          "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
          "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],

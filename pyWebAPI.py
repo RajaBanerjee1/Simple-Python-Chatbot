@@ -141,7 +141,12 @@ def predict_class(sentence, model):
     return return_list
 
 def getResponse(ints, intents_json):
+    if len(ints) == 0:
+        print ("Model did not return a matching intent" )
+        ints.append({"intent": "default", "probability": 0})
     tag = ints[0]['intent']
+    prob = ints[0]['probability']
+    print ("Replying with model:" , tag ," probability:" , prob )
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
         if(i['tag']== tag):
